@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Homeworks</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="back">
+        <img src="./assets/summer-bg.jpg" alt=" Изображение лета">
+      </div>
+      <h1 class="title">Weather sounds</h1>
+      <div class="buttons">
+        <button class="button button--summer" data-sound="summer" type="button">
+          <img src="./assets/summer-bg.jpg" alt=" Изображение лета">
+        </button>
+
+        <button class="button button--rain" data-sound="rain" type="button">
+          <img src="./assets/rainy-bg.jpg" alt=" Изображение дождя">
+        </button>
+
+        <button class="button button--winter" data-sound="winter" type="button">
+          <img src="./assets/winter-bg.jpg" alt=" Изображение зимы">
+        </button>
+      </div>
+
+      <div class="volume">
+        <input type="range" min="0" max="1" step="0.1" value="0.5" class="volume__level" id="volume">
+      </div>
+
+      <audio src="./assets/sounds/summer.mp3" data-sound
+        class="audio"></audio>
+    </div>
+
+  </body>
+  <script src="./app.js"></script>
+</html>
